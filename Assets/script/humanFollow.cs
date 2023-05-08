@@ -20,12 +20,20 @@ public class humanFollow : MonoBehaviour
         {
             transform.position += transform.forward * speed * Time.deltaTime;
 
-            if(Vector3.Distance(transform.position, Player.position) <= minDist)
+            if (Input.GetKey(KeyCode.B))
+            {
+                
+                Debug.Log("Bark");
+            }
+
+            if (Vector3.Distance(transform.position, Player.position) <= minDist)
             {
                 //disable
             }
 
         }
+
+
 
     }
 }
