@@ -22,7 +22,7 @@ public class humanFollow : MonoBehaviour
 
             if (Input.GetKey(KeyCode.B))
             {
-                
+                speed = 0;
                 Debug.Log("Bark");
             }
 
